@@ -1,0 +1,124 @@
+@font-face {
+    src: url(product-sans/Product-Sans-Regular.ttf);
+    font-family: product-sans;
+
+}
+
+#container {
+    height: 98vh;
+    display: grid;
+    grid-template-columns: 10% auto 20%;
+    grid-template-rows: 10% auto 5%;
+    grid-template-areas:
+        "header-left header-middle header-right"
+        "main-left   main-middle   main-right"
+        "footer-main footer-main  footer-main";
+
+
+}
+/*Navigation*/
+#nav {
+    grid-area: header-left;
+
+
+}
+
+#nav #about {
+    margin-top: 10px;
+}
+#nav a {
+    margin-left: 10px;
+    margin-top: 100px;
+
+}
+
+/*Other Links*/
+#other_links {
+    grid-area: header-right;
+ 
+}
+
+#other_links #gmail {
+    margin-left: 250px;
+    margin-top: 10px;
+
+}
+#other_links a {
+    margin-left: 10px;
+}
+/*Search Bar*/
+
+#search_bar {
+    grid-area: main-middle;
+
+    margin-top: 100px;
+
+}
+
+#search_bar #search-content {
+    text-align: center;
+    margin-top: -70px;
+    margin-left: 170px;
+  
+
+}
+
+#search_bar #search-content form {
+    margin-top: -80px;
+
+}
+
+#search_bar #search-content h4 {
+    font-size: 80px;
+    font-family: product-sans;
+    
+}
+
+
+
+#search_bar #search-content #search {
+    width: 400px;
+    height: 40px;
+    border-radius: 25px;
+
+}
+
+form #button {
+    height: 30px;
+}
+
+/*Footer Main*/
+
+#footer-main {
+    grid-area: footer-main;
+   
+   
+    margin-bottom: -11px;
+}
+
+#footer-main div {
+    
+    margin-top: 20px;
+    
+    
+
+}
+#footer-main #advertising {
+    float: left;
+}
+
+#footer-main #privacy {
+    float: right;
+}
+
+#footer-main #advertising #privacy, a {
+    padding-right: 10px;
+
+
+
+
+
+
+
+
+
