@@ -7,6 +7,7 @@
 #container {
     height: 98vh;
     display: grid;
+
     grid-template-columns: 10% auto 20%;
     grid-template-rows: 10% auto 5%;
     grid-template-areas:
@@ -19,12 +20,14 @@
 /*Navigation*/
 #nav {
     grid-area: header-left;
-
+    position: absolute;
 
 }
 
 #nav #about {
     margin-top: 10px;
+
+
 }
 #nav a {
     margin-left: 10px;
@@ -35,6 +38,10 @@
 /*Other Links*/
 #other_links {
     grid-area: header-right;
+    position: absolute;
+    right: 0;
+  
+  
  
 }
 
@@ -91,24 +98,27 @@ form #button {
 
 #footer-main {
     grid-area: footer-main;
-   
+  
    
     margin-bottom: -11px;
 }
 
 #footer-main div {
-    
     margin-top: 20px;
     
-    
-
 }
+
 #footer-main #advertising {
-    float: left;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+
 }
 
 #footer-main #privacy {
-    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
 }
 
 #footer-main #advertising #privacy, a {
